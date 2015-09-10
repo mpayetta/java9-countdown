@@ -1,0 +1,349 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	color: #f2f2f2;
+}
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+#container {
+	padding: 20px 0px 40px;
+	background: #ee5866;
+}
+
+#container .social-share {
+	text-align: center;
+	width: 100%;
+}
+#container .social-share .share-btn {
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	padding: 0px 20px;
+}
+#container .social-share .gplus {
+	width: 60px;
+	max-width: 60px;
+}
+#container .social-share .share-btn .fb-share-button{
+	margin-top: 5px;
+}
+#container .social-share .share-btn .twitter-share-button,
+#container .social-share .share-btn .IN-widget {
+	margin-top: 7px;
+}
+
+#container .title {
+	font-size: 50px;
+	text-align: center;
+}
+#container .day-counter {
+	position: relative;
+	text-align: center;
+}
+#container .odometer-container {
+	position: relative;
+	width: 400px;
+	margin: auto;
+}
+#container img {
+	position: absolute;
+	left: -155px;
+	bottom: -70px;
+}
+#container .days-until {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 22px;
+}
+#container .tweet-this {
+	background-color: transparent;
+	border: 2px solid #f2f2f2;
+	border-radius: 4px;
+	padding: 5px 15px;
+	font-size: 18px;
+	margin-top: 20px;
+	display: inline-block;
+}
+#container .tweet-this .fa {
+	margin-right: 5px;
+	font-size: 20px;
+}
+#container .progress-bar {
+	width: 500px;
+	height: 40px;
+	margin: 95px auto 40px auto;
+	border: 4px solid #ab3d48;
+	border-radius: 4px;
+	background-image: linear-gradient(to bottom, #f2f2f2 0%, #f2f2f2 50%, #eee 51%, #eee 100%);
+	position: relative;	
+}
+#container .progress-bar .progress {
+	height: 100%;
+	width: 0%;
+	background-image: linear-gradient(to bottom, #19B6F1  0%, #19B6F1  50%, #00aeef 51%, #00aeef 100%);
+	position: relative;
+}
+#container .progress-bar .progress-end {
+	position: absolute;
+	top: -5px;
+	right: 0px;
+	width: 3px;
+	height: 50px;
+	background: #008BBF;
+}
+#container .progress-bar .divider {
+	width: 3px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 0;
+}
+#container .progress-bar .divider.all-tests-run {
+	left: 80px;
+}
+#container .progress-bar .divider.feature-complete {
+	left: 180px;
+}
+#container .progress-bar .divider.all-tests-run2 {
+	left: 260px;
+}
+#container .progress-bar .divider.zero-bug-bounce {
+	left: 350px;
+}
+#container .progress-bar .divider.final-rc {
+	left: 450px;
+}
+
+#container .progress-bar .divider-txt {
+	position: absolute;
+	text-align: center;
+	font-size: 10px;
+	width: 70px;
+}
+#container .progress-bar .divider-txt.all-tests-run {
+	left: 4px;
+	top: -45px
+}
+#container .progress-bar .divider-txt.feature-complete {
+	left: 296px;
+	bottom: -56px;
+	width: 70px;
+}
+#container .progress-bar .divider-txt.all-tests-run2 {
+	left: 328px;
+	top: -45px;
+}
+#container .progress-bar .divider-txt.zero-bug-bounce {
+	left: 375px;
+	bottom: -56px;
+	width: 70px;
+}
+#container .progress-bar .divider-txt.final-rc {
+	left: 429px;
+	width: 70px;
+	top: -59px;
+}
+#container .progress-bar .divider-txt.available {
+	left: 451px;
+	bottom: -43px;
+	width: 100px;
+}
+
+#posts {
+	background: #00aeef;
+	text-align: center;
+	padding: 20px;
+}
+#posts h1 {
+	margin: 0px;
+	font-size: 20px;
+}
+#posts .posts-container {
+	width: 70%;
+	margin: 40px auto;
+}
+#posts .posts-container .post-container {
+	width: 30%;
+	margin-right: 1.5%;
+	display: inline-block;
+	background: #fff;
+	color: #222;
+}
+#posts .posts-container .post-container:last-child {
+	margin-right: 0;
+}
+#posts .posts-container .post-container .post p {
+	margin: 10px;
+	font-size: 14px;
+	text-align: left;
+	display: inline-block;
+}
+#posts .posts-container .post-container .post a {
+	color: #ee5866;
+}
+
+#posts .subscribe-form input {
+	height: 30px;
+	width: 250px;
+	line-height: 30px;
+	padding: 3px 7px;
+	text-align: center;
+	border: none;
+	border-radius: 3px;
+	color: #222;
+}
+#posts .subscribe-button {
+	height: 30px;
+	line-height: 30px;
+	padding: 3px 25px;
+	margin-left: 10px;
+	background: #ffbe26;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+#footer {
+	background: #282f32; 
+	color: #f2f2f2;
+	text-align: center;
+	line-height: 40px;
+	font-size: 13px;
+}
+
+#footer .divider {
+	margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
